@@ -1,3 +1,5 @@
+I wanted to use a RealSense D405 with GStreamer on a Raspberry Pi 5 with Hailo AI Hat+, but hat some issues with swapped color channels. The output of realsensesrc was in some kind of GBR instead of RGB format which led to shifted colors in GStreamer. Additionally a stripe of a few pixels from the right side was displayed on the left side. This fork fixes the mixed color channels, the wrong stripe is still there. I don't really know what I did or why it works, but it works on my machine!
+
 # realsense-gstreamer
 
 GStreamer source plugin for the Intel RealSense line of cameras. 
